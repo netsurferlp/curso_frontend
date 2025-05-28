@@ -1,0 +1,3 @@
+Este proyecto es una pagina basica desarrolada  como parte de un curso de Front-End. La pagina esta estructurada  con HTML seman tico  y utiliza  las etiquetas <header>, <main>,  y <footer>  para organizar el  contenido. El objetivo   es aprender a crear la estructura  basuica de una pagina web y prepararla  para futuras mejoras con CSS      y Javascript  .
+
+Este  sitio web contiene los ejem plos(HTML, CSS, JS)   que vamos viendo durante la cursada separadas pòr clases.

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+*  
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+header 
+{
+    background-color: #485696;
+    font-family: Outfit, verdana, Tahoma, sans-serif;
+    
+}
+/*productos*/
+.flex-container 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+
+.form-section   
+{
+    background-color: #f24c00;
+    color:#f9c784;    
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-bottom: 25%;
+    font-family: Outfit, verdana, Tahoma, sans-serif;
+}
+
+
+footer 
+{
+    background-color: #485696;
+    color: #e7e7e7;
+    padding: 5%;
+    text-align: center;
+    border: 2px solid black;
+    font-family: Outfit, verdana, Tahoma, sans-serif;
+}
