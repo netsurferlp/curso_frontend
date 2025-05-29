@@ -8,25 +8,152 @@
     box-sizing: content-box;
 }
 
+body
+{
+    font-family: Outfit, verdana, Tahoma, sans-serif;
+}
+
 header 
 {
     background-color: #485696;
-    font-family: Outfit, verdana, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     
 }
+
+header img
+{
+    width: 100px;
+    
+}
+ header a {
+    text-decoration:  none;
+    color: #e7e7e7;
+ }
+
+ header  a :hover
+ {
+     color: lightblue;
+     text-decoration: underline;
+ }
+
+
+.flex-links
+{
+    display: flex;
+    list-style-type: none;
+    gap: 5px;
+    flex-wrap: wrap;
+
+
+}
+
+/*Acerca de Nosotros*/
+
+.nosotros
+{
+    border: 2px  solid blue;
+     text-align: center;
+     padding:10%;
+     background-image: url();
+     background-position: center;
+     background-size: contain;
+     background-repeat: no-repeat;
+     
+}
+
+.txt-nosotros
+{
+border : 2px solid black;
+ border-radius: 10px;
+ backdrop-filter: blur(5px);
+
+}
+
+
 /*productos*/
+
+.section-prod
+
+{
+    background-color: #b3bff2;
+}
+
+
+
+
+.prod-titulo
+{
+    text-align: center;
+    margin: 5% 0;
+}
+
+
 .flex-container 
 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
+    gap: 5px;
+
+   
 }
 
+.flex-container  img
+{
+    width: 200px;
+}
 
+.item 
+{
+    border:2px solid black;
+    border-radius: 10px;
+    text-align:center;
+}
 
+/*card*/
+
+.precio
+{
+    font-size: x-large;
+    text-align:left;
+    margin-left: 1%;
+} 
+
+.oferta
+{
+    font-size: medium;
+    color: green;
+    text-align:left;
+    margin-left: 1%;
+}
+
+.descripcion
+{
+    font-size: small;
+    text-align:left;
+    margin-left: 1%;
+}
+
+.btn-item
+{
+    background-color: #f24c00;
+    color: #f9c784;
+    padding: 3%;
+    border-radius: 10px;
+
+}
+
+.btn-item:hover
+{
+    background-color: #f9c784;
+    color: #f24c00;
+    cursor: pointer;
+
+}
+
+/*formulario*/
 .form-section   
 {
     background-color: #f24c00;
@@ -38,6 +165,45 @@ header
     font-family: Outfit, verdana, Tahoma, sans-serif;
 }
 
+.formulario 
+{
+    border : 2px solid black;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    background-color: #0c1a5b;
+
+}
+
+.nombre
+{
+    margin: 10px;
+}
+
+.mail
+{
+    margin-bottom: 10px;
+}
+.mensaje
+{
+    margin-bottom: 10px;
+}
+
+.enviar
+{
+    margin-bottom: 10px;
+    background-color: #0c1a5b;
+    border-radius: 10px;
+    color: #e7e7e7;
+    padding: 5px;
+}
+.enviar:hover
+{
+    background-color: #485696;
+    
+    cursor: pointer;
+}
+
 
 footer 
 {
@@ -47,4 +213,106 @@ footer
     text-align: center;
     border: 2px solid black;
     font-family: Outfit, verdana, Tahoma, sans-serif;
+}
+
+.footer-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.ft-redes svg{
+    width: 48px;
+}
+
+.ft-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.ft-links a {
+    text-decoration: none;
+    color: #e7e7e7;
+
+}
+
+.ft-links a:hover {
+    color: lightblue;
+    text-decoration: underline;
+
+}
+.ft-copyright
+{
+    display: block;
+}
+
+/*medias Queries*/
+/*Media query para dispositivos superiores 0 px  a 601px de ancho*/
+@media   only  screen and (max-width: 400px) 
+{
+header   
+{
+    flex-direction: column;
+  
+}
+}
+@media   only  screen and (min-width: 601px) 
+{
+.form-section   
+{
+    background-color: blueviolet;
+    color:azure;  
+  
+}
+}
+
+/*Media query para dispositivos superiores a 601px de ancho*/
+@media  only screen   and (min-width:601.1px)
+{
+header{
+    font-size: clamp(1rem, 32px, 2rem);
+   
+}
+
+header img
+{
+    width: 250px;
+    
+}
+
+nav{
+    margin-right: 5px;
+}
+
+.txt-nosotros
+{
+font-size: clamp(1rem, 32px, 2rem);
+   
+
+}
+.flex-container  img
+{
+    width: 400px;
+}
+
+
+
+
+.flex-links{
+    gap: 15px;
+}
+
+    footer {
+        background-color: black;
+    }
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+    }
+    .ft-redes svg{
+    width: 96px;
+}
 }

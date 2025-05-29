@@ -12,11 +12,11 @@
         <img  src="../img/logo.png" alt="Logo de la Empresa" class="logo">
 
         <nav>
-        <ul>
-            <li>Inicio</li>
-            <li>Formulario</li>
-            <li>Productos</li>
-            <li>Contacto</li>
+        <ul  class="flex-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#form-id">Formulario</a></li>
+            <li><a href="#prod-id">Productos</a></li>
+            <li><a href="#footer_id">Contacto</a></li>
             </ul>
     
         </nav>
@@ -24,37 +24,101 @@
     </header>
 
     <main>
-        <section class="form-section">
-            <h2>Formulario de Contacto</h2>
-            <form>
-                <label for="name">Nombre:</label><br>
-                <input type="text" id="name" name="name" placeholder="Ingrese su nombre" required><br>
-
-                <label for="email">Correo Electrónico:</label><br>
-                <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required><br>
-
-                <label for="message">Mensaje:</label><br>
-                <textarea id="message" name="message"  placeholder="Ingrese su Mensaje" required></textarea><br>
-
-                <input type="button" value="Enviar">
-            </form>
-        </section>
-        <section>
-            
-   
-        </section>
-
-           <section>
-         
+            <section  class="nosotros">
+         <p class="txt-nosotros">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga explicabo odit nobis, impedit officia iste laboriosam sint architecto omnis illo soluta! Facilis delectus cum ipsa tenetur, earum excepturi accusamus voluptates iusto, porro laborum tempora placeat, dolorem eum quia culpa quae.</p>
              
         </section>
+        <section class="section-prod" id="prod_id">
+            <h2  class="prod-titulo">Productos</h2>
+            <div  class="flex-container">
+                <div class="item">
+                    <img  src="../img/producto1.jpg" alt="Producto 1" width="100">
+                    <p class="precio">$33.33</p>
+                    <p class="oferta">40% OFF</p>
+                    <p class="descripcion">Descripción del Producto 1  zaraza zaraza</p>
+                    <button class="btn-item">Comprar</button>
+                </div>
+                <div class="item">
+                    <img  src="../img/producto1.jpg" alt="Producto 1" >
+                    <p class="precio">$33.33</p>
+                    <p class="oferta">40% OFF</p>
+                    <p class="descripcion">Descripción del Producto 2  zaraza zaraza</p>
+                    <button class="btn-item">Comprar</button>
+                </div>
+                    <div class="item">
+                    <img  src="../img/producto1.jpg" alt="Producto 1" >
+                    <p class="precio">$33.33</p>
+                    <p class="oferta">40% OFF</p>
+                    <p class="descripcion">Descripción del Producto 3  zaraza zaraza</p>
+                    <button class="btn-item">Comprar</button>
+                </div>
+                    <div class="item">
+                    <img  src="../img/producto1.jpg" alt="Producto 1" >
+                    <p class="precio">$33.33</p>
+                    <p class="oferta">40% OFF</p>
+                    <p class="descripcion">Descripción del Producto 4  zaraza zaraza</p>
+                    <button class="btn-item">Comprar</button>
+                </div>
+                    <div class="item">
+                    <img  src="../img/producto1.jpg" alt="Producto 1" >
+                    <p class="precio">$33.33</p>
+                    <p class="oferta">40% OFF</p>
+                    <p class="descripcion">Descripción del Producto 5  zaraza zaraza</p>
+                    <button class="btn-item">Comprar</button>
+                </div>
+                    <div class="item">
+                    <img  src="../img/producto1.jpg" alt="Producto 1" >
+                    <p class="precio">$33.33</p>
+                    <p class="oferta">40% OFF</p>
+                    <p class="descripcion">Descripción del Producto 6  zaraza zaraza</p>
+                    <button class="btn-item">Comprar</button>
+                </div>
+            </div>
+        </section>
+        <section id="form-id" class="form-section">
+            <h2 class="form-titulo">Formulario de Contacto</h2>
+            <form  class="formulario">
+                <label for="name">Nombre:</label><br>
+                <input type="text" class="nombre"id="name" name="name" placeholder="Ingrese su nombre" required><br>
+
+                <label for="email">Correo Electrónico:</label><br>
+                <input type="email"  class="mail" id="email" name="email" placeholder="Ingrese su correo electrónico" required><br>
+
+                <label for="message">Mensaje:</label><br>
+                <textarea id="message" class="mensaje" name="message"  placeholder="Ingrese su Mensaje"  rows="8" required></textarea><br>
+
+                <input type="button" class="enviar"  value="Enviar">
+            </form>
+        </section>
+   
+
+       
 
 
 
     </main>
 
-    <footer>
-        <p>&copy; 2023 PreEntrega Curso Front-End</p>
+    <footer class="footer-container" id="footer-id">
+
+        <div  class="ft-ubicacion"><h2>Ubicacion</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52305.94249309273!2d-58.029652541270615!3d-34.978623613891266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2ebdcbc298999%3A0x555da9ac8dc20321!2sLos%20Hornos%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1748528744220!5m2!1ses!2sar" width="100%"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        </div>
+        <div class="ft-redes"><h2>Redes Sociales</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.6 17.6 0 0 0 3.8.4c8.3 0 11.5-6.1 11.5-11.4c0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 0 1-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5c-10.2-26.5-24.9-33.6-24.9-33.6c-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8c11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0 0 25.6-6c2-14.8 7.8-24.9 14.2-30.7c-49.7-5.8-102-25.5-102-113.5c0-25.1 8.7-45.6 23-61.6c-2.3-5.8-10-29.2 2.2-60.8a18.6 18.6 0 0 1 5-.5c8.1 0 26.4 3.1 56.6 24.1a208.2 208.2 0 0 1 112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.6 18.6 0 0 1 5 .5c12.2 31.6 4.5 55 2.2 60.8c14.3 16.1 23 36.6 23 61.6c0 88.2-52.4 107.6-102.3 113.3c8 7.1 15.2 21.1 15.2 42.5c0 30.7-.3 55.5-.3 63c0 5.4 3.1 11.5 11.4 11.5a19.4 19.4 0 0 0 4-.4C415.9 449.2 480 363.1 480 261.7C480 134.9 379.7 32 256 32"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1024 1024"><path fill="currentColor" d="M940.736 189.696C912.992 169.728 835.68 143.2 511.728 143.2c-347.152 0-398.656 30.464-415.185 40.432C8.575 236.479.223 470.447-.544 517.887C.512 580.545 10.64 789.008 96.48 840.577c16.497 9.935 67.712 40.223 415.248 40.223c324.16 0 401.376-26.4 429.008-46.288c74.976-53.935 83.6-239.68 83.808-317.439c-.192-62.528-6.752-271.872-83.807-327.376zm-37.376 592.88c-11.152 8.032-75.186 34.223-391.634 34.223c-305.936 0-370.128-23.744-382.256-31.056c-30.88-18.528-63.472-116.88-66.031-268.032c2.528-150.816 35.568-260.912 66.097-279.216c12.16-7.344 76.591-31.28 382.19-31.28c316.192 0 380.4 26.369 391.633 34.433c27.409 19.744 56.752 123.68 57.184 275.632c-.432 154.336-29.968 245.712-57.184 265.296zM720.415 486.83L432.481 310.141a32 32 0 0 0-32.257-.464a32.02 32.02 0 0 0-16.288 27.872v353.44a32.016 32.016 0 0 0 32 32a32 32 0 0 0 16.527-4.592L720.4 541.645c9.6-5.807 15.472-16.19 15.472-27.407s-5.856-21.632-15.456-27.408zM447.953 634.301V394.204l194 120.032z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 100 100"><path fill="currentColor" d="M80.667 14H19.315C16.381 14 14 16.325 14 19.188v61.617C14 83.672 16.381 86 19.315 86h61.352C83.603 86 86 83.672 86 80.805V19.188C86 16.325 83.603 14 80.667 14M35.354 75.354H24.67V40.995h10.684zm-5.342-39.057a6.19 6.19 0 0 1-6.19-6.194a6.189 6.189 0 1 1 12.379 0a6.194 6.194 0 0 1-6.189 6.194M75.35 75.354H64.683V58.646c0-3.986-.078-9.111-5.551-9.111c-5.558 0-6.405 4.341-6.405 8.822v16.998H42.052v-34.36h10.245v4.692h.146c1.426-2.7 4.91-5.549 10.106-5.549c10.806 0 12.802 7.114 12.802 16.369v18.847z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><g fill="none"><path d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M19.753 4.659a1 1 0 0 0-1.506-1.317l-5.11 5.84L8.8 3.4A1 1 0 0 0 8 3H4a1 1 0 0 0-.8 1.6l6.437 8.582l-5.39 6.16a1 1 0 0 0 1.506 1.317l5.11-5.841L15.2 20.6a1 1 0 0 0 .8.4h4a1 1 0 0 0 .8-1.6l-6.437-8.582l5.39-6.16Z"/></g></svg>
+
+        </div>
+        <div class="ft-links"><h2>Links Utiles</h2>
+      <a href="#">Inicio</a>
+      <a href="#">Productos</a>
+     <a href="#">Contacto</a>
+     <a href="#">Ubicacion</a>
+      <a href="#">Avisos Legales</a>
+        </div>
+     
     </footer>
 
  
