@@ -15,8 +15,8 @@
         <ul  class="flex-links">
             <li><a href="#">Inicio</a></li>
             <li><a href="#prod-id">Servicios</a></li>
-            <li><a href="#form-id">Formulario</a></li>
-            <li><a href="#footer-id">Contacto</a></li>
+            <li><a href="#form-id">Consultas</a></li>
+            <li><a href="#footer-id">Portfolio</a></li>
             </ul>
     
         </nav>
@@ -71,30 +71,30 @@
 
         <section id="form-id" class="form-section">
             
-            <h2 class="form-titulo">Contacto</h2>
+            <h2 class="form-titulo">Consultas y Soporte</h2>
          <div class="flex-container-form">
             <div class="ft-formulario">
-                <h2 class="form-titulo">Formulario</h2>
+                <h2 class="form-titulo">Haga su consulta</h2>
              <form action="envio_mail.php" method="POST" enctype="multipart/form-data">
                 <label for="nombre" class="label">Nombres:</label><br>
-                <input type="text" class="txt"id="nombre" name=" nombre" placeholder="Ingrese su nombre" required><br>
+                <input type="text" class="txt" id="nombre" name=" nombre" placeholder="Ingrese su nombre" ><br>
 
                 <label for="apellido" class="label">Apellidos:</label><br>
-                <input type="text" class="txt"id="apellido" name="apellido" placeholder="Ingrese su apellido" required><br>
+                <input type="text" class="txt" id="apellido" name="apellido" placeholder="Ingrese su apellido" ><br>
 
                   <label for="telefono" class="label">Telefono:</label><br>
-                <input type="text" class="txt"id="telefono" name="telefono" placeholder="Ingrese su telefono" required><br>
+                <input type="text" class="txt" id="telefono" name="telefono" placeholder="Ingrese su telefono" ><br>
 
                 <label for="email" class="label">Correo Electrónico:</label><br>
-                <input type="email"  class="txt" id="email" name="email" placeholder="Ingrese su correo electrónico" required><br>
+                <input type="email"  class="txt" id="email" name="email" placeholder="Ingrese su correo electrónico" ><br>
 
                  <label for="asunto" class="label">Asunto:</label><br>
-                <input type="text" class="txt"id=" asunto" name="asunto" placeholder="Ingrese el  asunto" required><br>
+                <input type="text" class="txt" id="asunto" name="asunto" placeholder="Ingrese el  asunto" ><br>
 
                 <label for="mensaje" class="label">Mensaje:</label><br>
-                <textarea id="mensaje" class="txt" name="mensaje"  placeholder="Ingrese su Mensaje"  rows="8" required></textarea><br>
+                <textarea id="mensaje" class="txt" name="mensaje"  placeholder="Ingrese su Mensaje"  rows="8" ></textarea><br>
 
-                <input type="submit" class="enviar"  value="Enviar">
+                <input type="submit" class="enviar" id="enviar" name="enviar" value="Enviar Mensaje">
             </form>
 </div>
             <div  class="ft-ubicacion">
@@ -136,6 +136,7 @@
      
     </footer>
            
+ <script src="../js/validaciones_form.js"></script>
  
 </body>
 </html> 
