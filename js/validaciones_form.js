@@ -36,22 +36,15 @@ function validarFormulario() {
 const enviarBtn = document.getElementById("enviar");
 
 enviarBtn.addEventListener("click", function(event) {
-  // Obtener dimensiones del navegador
-  const width = window.innerWidth;
-  const height = window.innerHeight ;
-const ancho = 400; // Ancho de la ventana emergente
-  const alto = 300; // Alto de la ventana emergente 
-  // Calcular la posición central
-  const left = (width - ancho) / 2;
-  const top = (height - alto) / 2;
-    const url = "envio_mail.php"; // URL del archivo PHP que procesa el formulario
-    const titulo = "Confirmación de Envío"; // Título de la ventana emergente
-
-  const opciones = `width=${ancho},height=${alto},left=${left},top=${top},resizable=no,scrollbars=no,status=no,toolbar=no,menubar=no,location=no`;
+ 
       event.preventDefault(); // Evita el envío del formulario si hay errores
     if (validarFormulario()) {
-    window.open(url, titulo, opciones);
+     window.location.href = "../pages/envio_mail.php"; // Redirige a la página de envío
 
     
     }
+
+ 
+
+
 });
