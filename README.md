@@ -63,6 +63,8 @@ Fetch Api
 
 Consume datos desde una API REST usando fetch.
 
+**Los datos para los productos son hardcoreados de la pagina principal**
+
 Muestra los productos obtenidos de la API en la página en forma de tarjetas (cards).
 
 Visualización de Productos:
@@ -77,6 +79,8 @@ Uso de localStorage o sessionStorage: Guarda el estado del carrito en localStora
 
 Contador Dinámico: Muestra el número total de productos en el carrito y asegúrate de actualizarlo en tiempo real.
 
+**realice el carrito dinamico genera un pedido para enviar por whatsapp**
+
 ## 9. Edición y visualización del carrito
 
 Visualización de Productos en el Carrito: Muestra una lista de productos añadidos al carrito, incluyendo cantidad, precio y total.
@@ -84,6 +88,8 @@ Visualización de Productos en el Carrito: Muestra una lista de productos añadi
 Edición de Cantidades y Eliminación de Productos: Implementa funciones para que el usuario pueda editar la cantidad de cada producto o eliminarlo del carrito.
 
 Total Dinámico:Actualiza el total de la compra cada vez que se modifiquen los productos en el carrito.
+
+**permite la carga y descarga de items al carrito se actualiza el total dinamicamente**
 
 ## 10. SEO & Accesibilidad
 

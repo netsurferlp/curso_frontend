@@ -9,6 +9,12 @@
    
 }
 
+.carrito_lleno {
+    display: none;
+}   
+
+
+
 body {
     font-family: Outfit, verdana, Tahoma, sans-serif;
     
